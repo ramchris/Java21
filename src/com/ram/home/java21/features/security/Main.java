@@ -6,7 +6,7 @@ import java.security.PublicKey;
 import javax.crypto.SecretKey;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    static void main(String[] args) throws Exception {
         // Step 1: Generate Asymmetric Key Pair
         KeyPair keyPair = AsymmetricKeyGenerator.generateKeyPair();
         PublicKey publicKey = keyPair.getPublic();
