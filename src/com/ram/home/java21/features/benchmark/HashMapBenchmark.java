@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapBenchmark {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int count = 1_000_000;
 
         // 1. Default Capacity (starts at 16)
@@ -18,8 +18,7 @@ public class HashMapBenchmark {
 
         // 2. Pre-calculated Capacity (count / 0.75 + 1)
         long start2 = System.nanoTime();
-        int initialCapacity = (int) (count / 0.75f) + 1;
-        Map<Integer, Integer> map2 = HashMap.newHashMap(initialCapacity);
+        Map<Integer, Integer> map2 = HashMap.newHashMap((int) (count / 0.75f) + 1);
         for (int i = 0; i < count; i++) {
             map2.put(i, i);
         }
