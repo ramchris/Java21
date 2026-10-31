@@ -1,4 +1,5 @@
 package com.ram.home.java21.features.collections;// Java program to implement Vector API
+
 import java.util.*;
 
 public class VectorImplement<E> {
@@ -292,8 +293,7 @@ public class VectorImplement<E> {
         vector.addElement("six");
 
         // printing the capacity of vector
-        System.out.println("The capacity of the vector is "
-                + vector.capacity());
+        System.out.println(STR."The capacity of the vector is \{vector.capacity()}");
 
         // printing the elements of vector
         System.out.println("Elements of vector is ");
@@ -317,19 +317,15 @@ public class VectorImplement<E> {
         System.out.println();
 
         // printing first element of vector
-        System.out.println("The first element of vector is "
-                + vector.firstElement());
+        System.out.println(STR."The first element of vector is \{vector.firstElement()}");
 
         // printing first element of vector
-        System.out.println("The last element of vector is  "
-                + vector.lastElement());
+        System.out.println(STR."The last element of vector is  \{vector.lastElement()}");
 
         // removing an element from the vector
-        System.out.println("Removing element ten"
-                + vector.remove("ten"));
+        System.out.println(STR."Removing element ten\{vector.remove("ten")}");
 
         // printing vector size
-        System.out.println("The size of the vector is "
-                + vector.size());
+        System.out.println(STR."The size of the vector is \{vector.size()}");
     }
 }
