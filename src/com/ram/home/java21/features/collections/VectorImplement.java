@@ -2,7 +2,7 @@ package com.ram.home.java21.features.collections;// Java program to implement Ve
 import java.util.*;
 
 public class VectorImplement<E> {
-    private Vector<E> vector;
+    private final Vector<E> vector;
 
     // Constructor to create an empty vector(internal array
     // has size 10)
@@ -277,7 +277,7 @@ public class VectorImplement<E> {
     // size
     public void trimToSize() { vector.trimToSize(); }
 
-    public static void main(String[] arg)
+    static void main(String[] arg)
     {
         // creating a object of VectorImplement class
         VectorImplement<String> vector

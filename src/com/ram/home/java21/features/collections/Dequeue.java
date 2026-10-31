@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Dequeue {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         Deque<String> deque = new ArrayDeque<>();
 
