@@ -14,7 +14,7 @@ public class HashMapBenchmark {
             map1.put(i, i);
         }
         long end1 = System.nanoTime();
-        System.out.println("Default Map: " + (end1 - start1) / 1_000_000 + " ms");
+        System.out.println(STR."Default Map: \{(end1 - start1) / 1_000_000} ms");
 
         // 2. Pre-calculated Capacity (count / 0.75 + 1)
         long start2 = System.nanoTime();
@@ -24,6 +24,6 @@ public class HashMapBenchmark {
         }
         long end2 = System.nanoTime();
         System.out.println(count);
-        System.out.println("Pre-sized Map: " + (end2 - start2) / 1_000_000 + " ms");
+        System.out.println(STR."Pre-sized Map: \{(end2 - start2) / 1_000_000} ms");
     }
 }
